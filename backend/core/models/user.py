@@ -39,7 +39,7 @@ class User(BaseModel):
 class UpdateUser(BaseModel):
     username: Optional[str]
     email: Optional[EmailStr]
-    phone_number: Optional[str]
+    phone_number: Optional[PhoneNumberStr]
     password: Optional[str]
     first_name: Optional[str]
     last_name: Optional[str]

@@ -1,11 +1,12 @@
 
+from typing import Annotated
 from fastapi import APIRouter, Body, Depends
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from starlette import status
-from core.models.user import User
+from core.models.user import User, UpdateUser
 from core.database import db
-from core.security import is_match, Jwt, Claims
+from core.security import is_match, Jwt, Claims, authenticate
 
 router = APIRouter(prefix='/user')
 
@@ -40,6 +41,32 @@ async def login(form_data: LoginBody = Depends()):
     return JSONResponse(status_code=status.HTTP_201_CREATED, content={'data': {'token': token}})
 
 
+@router.patch('/update/')
+async def update_user(uid: Annotated[str, Depends(authenticate)], update_user: UpdateUser = Body(...)):
+    update_user = update_user.to_dict()
+
+    res = check_unique(update_user)
+    if res is not None:
+        return not_uniq_response(res)
+    
+    res = db.user.update_one({"_id": uid}, {'$set': update_user})
+
+    if res.modified_count == 0:
+        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, content=f'No user with id({id}) found.')
+
+    content = {'data': {'count': res.modified_count}}
+    return JSONResponse(status_code=status.HTTP_200_OK, content=content)
+
+
+@router.delete('/delete/')
+async def delete_user(uid: Annotated[str, Depends(authenticate)]):
+    res = db.user.delete_one({'_id': uid})
+    if res.deleted_count == 0:
+        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, content=f'No user with id({id}) found.')
+    content =  {'data': {'count': res.deleted_count}}
+    return JSONResponse(status_code=status.HTTP_200_OK, content=content)
+
+
 def check_unique(user: dict) -> bool:
     to_check = ['username', 'email', 'phone_number']
     for param in to_check:
@@ -52,7 +79,7 @@ def check_unique(user: dict) -> bool:
 
 def not_uniq_response(param: str) -> JSONResponse:
     content = {
-        'fail': {
+        'error': {
             'not unique': param
         }
     }
