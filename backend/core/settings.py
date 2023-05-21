@@ -7,7 +7,10 @@ def init_env_vars():
     MONGO_DB = os.getenv('MONGO_DB_DATABASE')
     MONGO_IP = os.getenv('MONGO_DB_IP')
     MONGO_URL = f'mongodb://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_IP}/'
-    return MONGO_DB, MONGO_URL
+
+    SECRET = os.getenv('SECRET_KEY')
+
+    return SECRET, MONGO_DB, MONGO_URL
 
 load_dotenv()
-MONGO_DB, MONGO_URL = init_env_vars()
+SECRET_KEY, MONGO_DB, MONGO_URL = init_env_vars()
