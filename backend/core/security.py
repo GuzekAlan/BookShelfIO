@@ -2,6 +2,9 @@ from passlib.context import CryptContext
 from datetime import timedelta, datetime
 from core.settings import SECRET_KEY
 from jose import jwt, JWTError
+from fastapi import HTTPException, Depends
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from core.database import db
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -42,3 +45,13 @@ class Jwt:
             return {'id': payload.get('sub')}
         except JWTError:
             return None
+
+
+def authenticate(Authorization: HTTPAuthorizationCredentials = Depends(HTTPBearer())):
+    payload = Jwt.decode(Authorization.credentials)
+    if payload is None:
+        raise HTTPException(status_code=401, detail='Unauthorized')
+    uid = payload['id']
+    if db.user.find_one({'_id': uid}) is None:
+        raise HTTPException(status_code=404, detail='User does not exist')
+    return uid
