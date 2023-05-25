@@ -8,27 +8,11 @@ declare global{
 }
 
 export type StackParamList = {
-    'MainScreen': undefined,
-    'AddAnimal': undefined,
-    'OrderFeed': {screenName: string},
-    'OrderVet': undefined,
-    'Embryotransfer': {selectedSeed: number, selectedFeed: number},
-    'Insemination': {selectedSeed: number, selectedFeed: number},
-    'BreedingMaterial': undefined,
-    'BuySeed': {screenName: string},
-    'OrderedFeeds': undefined,
-    'OrderedServices': undefined,
-    'SellCattle': undefined,
-    'EmbryotransferContinue': {selectedFeed: number},
-    'OrderConsulting': undefined,
-    'InitializeScreen': undefined,
-    'BreedingMaterialInfo': {cowSelected: number},
-    'ChatWithSeller': {sellerID: number, cowSelected: number},
-    'BuyCattle': undefined,
-    'InseminationSynchro': undefined,
-    'SellCattlePremium': {cowSelected: number},
-    'MyAnimals': undefined,
-    'OrderVetContinue': {who: string, all: string, chosen: string, serviceSelected: number},
-  }
+    'Find Book': undefined,
+    'Books': undefined,
+    'AccountStack': undefined,
+    'LoggedProfile': undefined
+
+}
 
 export type RootStackScreenProps<Screen extends keyof StackParamList> = NativeStackScreenProps<StackParamList, Screen>;

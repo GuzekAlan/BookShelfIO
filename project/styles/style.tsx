@@ -105,7 +105,22 @@ const styles = StyleSheet.create({
   },
   backgroundColor: {
     backgroundColor: "#001400"
-  }
+  },
+  scrollViewContainer: {
+    overflow: "hidden",
+    flexDirection: "row",
+    display: "flex",
+    width: "200%",
+  },
+  tabsContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    alignSelf: "stretch",
+    alignContent: "stretch",
+  },
+
+
 
 });
 
