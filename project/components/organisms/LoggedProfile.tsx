@@ -22,8 +22,8 @@ const LoggedProfile = () => {
         <Text variant="bodyLarge">{"E-mail: " + email}</Text>
         <Text variant="bodyLarge">{"Phone number: " + phone}</Text>
         <Text variant="bodyLarge">{"Rating: " + rating}</Text>
-        <StyledButton title="Change details" />
-        <StyledButton title="Log out" />
+        <StyledButton title="Change details" onPress={() => {}} />
+        <StyledButton title="Log out" onPress={() => {}} />
       </MyView>
     </>
   );

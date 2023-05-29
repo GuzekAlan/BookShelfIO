@@ -47,6 +47,9 @@ const styles = StyleSheet.create({
   paddingTop10: {
     paddingTop: 10
   },
+  paddingTop20: {
+    paddingTop: 20
+  },
   paddingRigh25: {
     paddingRight: 25
   },
@@ -71,17 +74,17 @@ const styles = StyleSheet.create({
   marginRight5: {
     marginRight: 5
   },
+  marginLeftt10: {
+    marginLeft: 10
+  },
+  marginBottom15: {
+    marginBottom: 15
+  },
   paddingBottom5: {
     paddingBottom: 5
   },
   infoBoxBorder: {
     backgroundColor: "#001400",
-    borderRadius: 9
-  },
-  lightInfoBoxBorder: {
-    backgroundColor: "#001400",
-    borderColor: "#132c0f",
-    borderWidth: 1,
     borderRadius: 9
   },
   img: {
@@ -119,8 +122,11 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
     alignContent: "stretch",
   },
-
-
+  lightInfoBoxBorder: {
+    paddingVertical: 10,
+    borderBottomColor: 'lightgray',
+    borderBottomWidth: 1
+  },
 
 });
 

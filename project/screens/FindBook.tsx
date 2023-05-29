@@ -5,17 +5,16 @@ import {
   Text,
 } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
-import { View } from "react-native";
+import { SafeAreaView, View } from "react-native";
+import BooksProfile from "../components/organisms/BooksProfile";
 
 const FindBook = () => {
   const theme = useTheme();
   const { navigate } = useNavigation();
   return (
-    <View
-      style={[styles.flex1, { backgroundColor: theme.colors.surface }]}
-    >
-      <Text>one</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <BooksProfile />
+    </SafeAreaView>
   );
 };
 
