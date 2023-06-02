@@ -15,13 +15,15 @@ const BookBox = ({ title, author, owner, genre, image }: BookBoxProps) => {
     <View style={styles.lightInfoBoxBorder}>
       <View style={styles.rowDirection}>
         <Image source={{ uri: image }} style={{ height: 100, width: 100 }} />
-        <View style={styles.marginLeftt10}>
+        <View style={[styles.marginLeftt10, styles.flex1]}>
           <View style={[styles.spaceBetween, styles.rowDirection]}>
             <Text variant='titleMedium'>{title}</Text>
             <Text>{genre}</Text>
           </View>
-          <Text>{author}</Text>
-          <Text>{owner}</Text>
+          <View style={[styles.spaceBetween, styles.flex1]}>
+            <Text>{author}</Text>
+            <Text style={{ color: "#4169E1" }}>{owner}</Text>
+          </View>
         </View>
       </View>
     </View>

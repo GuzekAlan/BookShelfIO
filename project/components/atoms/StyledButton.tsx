@@ -14,7 +14,7 @@ const StyledButton = ({ onPress, icon, title }: Props) => {
   return (
     <Button
       mode="text"
-      style={[{ backgroundColor: '#4169E1'}, styles.margin6]}
+      style={[{ backgroundColor: '#4169E1', borderRadius: 5}, styles.margin6]}
       onPress={onPress}
     >
       <Text style={{color: 'white'}}>{title}</Text>
