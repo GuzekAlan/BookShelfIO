@@ -7,6 +7,7 @@ import Books from '../screens/Books';
 import FindBook from '../screens/FindBook';
 import LoggedProfile from "../components/organisms/LoggedProfile";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import RentedBooks from "../components/organisms/RentedBooks";
 
 
 const Stack = createBottomTabNavigator<StackParamList>();
