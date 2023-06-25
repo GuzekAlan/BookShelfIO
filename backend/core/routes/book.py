@@ -2,10 +2,7 @@ from fastapi import APIRouter, Body
 from fastapi.responses import JSONResponse
 from core.models.book import Book
 from core.database import db
-from core.models.model import not_uniq_response
 from starlette import status
-from pydantic import BaseModel, Field
-from fastapi.encoders import jsonable_encoder
 
 router = APIRouter(prefix='/book')
 
