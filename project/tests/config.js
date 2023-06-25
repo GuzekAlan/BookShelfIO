@@ -1,0 +1,1 @@
+export const phone_name = 'iPhone 6';
