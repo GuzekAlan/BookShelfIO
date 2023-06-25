@@ -1,3 +1,4 @@
+from enum import Enum
 from bson.objectid import ObjectId
 
 class PyObjectId(ObjectId):
@@ -31,3 +32,10 @@ class PhoneNumberStr(str):
     @classmethod
     def __modify_schema__(cls, field_schema):
         field_schema.update(type="string")
+
+class Genre(str, Enum):
+    FANTASY = 'FANTASY'
+    HORROR = 'HORROR'
+    ROMANCE = 'ROMANCE'
+    POETRY = 'POETRY'
+    HISTORY = 'HISTORY'
