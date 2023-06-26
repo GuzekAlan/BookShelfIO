@@ -14,9 +14,10 @@ interface RentedBookBoxProps {
     rentDate?: string
     returnDate?: string
     isExpire?: boolean
+    buttonTitle?: string
 }
 
-const RentedBookBox = ({rented, title, author, image, genre, rentedTo, rentedFrom, rentDate, returnDate, isExpire} : RentedBookBoxProps) => {
+const RentedBookBox = ({rented, title, author, image, genre, rentedTo, rentedFrom, rentDate, returnDate, isExpire, buttonTitle} : RentedBookBoxProps) => {
     const expiredStyle = () => {
         const style =
           isExpire
@@ -39,7 +40,7 @@ const RentedBookBox = ({rented, title, author, image, genre, rentedTo, rentedFro
             <Text style={expiredStyle()}>{"Expected return date: " + returnDate}</Text>
           </View>
           <View style={[ styles.flex1, styles.rowDirection]}>
-            <StyledButton title="Remind" onPress={() => {}} />
+            <StyledButton title={buttonTitle || ""} onPress={() => {}} />
             <StyledButton title="Add comment" onPress={() => {}} />
           </View>
         </View>

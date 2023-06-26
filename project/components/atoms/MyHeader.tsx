@@ -2,6 +2,7 @@ import * as React from "react";
 import { Dimensions, ScrollView, View } from "react-native";
 import { Appbar, useTheme, Button, Text } from "react-native-paper";
 import styles from "../../styles/style";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 interface Props {
   title: string;
@@ -30,7 +31,7 @@ const MyHeader = ({ title, onBack, isAllSelected, scrollRef, tabTitle1, tabTitle
   };
 
   return (
-    <>
+    <View>
       {scrollRef == undefined ? (
         <Appbar.Header theme={theme} mode="small">
           {!!onBack && <Appbar.BackAction onPress={onBack} />}
@@ -96,7 +97,7 @@ const MyHeader = ({ title, onBack, isAllSelected, scrollRef, tabTitle1, tabTitle
           </View>
         </View>
       )}
-    </>
+    </View>
   );
 };
 

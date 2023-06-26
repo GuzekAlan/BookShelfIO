@@ -9,6 +9,7 @@ import { Formik } from "formik";
 import MyInput from "../atoms/MyInput";
 import StyledButton from "../atoms/StyledButton";
 import LoggedProfile from "./LoggedProfile";
+import { loginUser } from "../../api";
 
 const LoginSchema = Yup.object().shape({
     login: Yup.string()
@@ -40,6 +41,11 @@ const Login = () => {
         <Formik
           onSubmit={(values) => {
             console.log("values", values);
+            const user = {
+              username: values.login,
+              password: values.password
+            }
+            loginUser(user)
             navigate("LoggedProfile");
           }}
           initialValues={{

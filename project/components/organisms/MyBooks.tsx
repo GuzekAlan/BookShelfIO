@@ -28,6 +28,7 @@ const MyBooks = () => {
               returnDate={item.returnDate}
               isExpire={item.isExpire}
               genre={item.genre}
+              buttonTitle="Remind"
             />
           )}
           ListHeaderComponent={AddBookButton}

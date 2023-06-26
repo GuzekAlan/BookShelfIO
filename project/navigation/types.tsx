@@ -11,7 +11,7 @@ export type StackParamList = {
     'Find Book': undefined,
     'Books': undefined,
     'AccountStack': undefined,
-    'LoggedProfile': undefined
+    'LoggedProfile': undefined,
 
 }
 

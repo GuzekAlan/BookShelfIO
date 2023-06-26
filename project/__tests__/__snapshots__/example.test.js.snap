@@ -1,0 +1,568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Account component renders correctly 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "backgroundColor": "#4169E1",
+      "borderRadius": 5,
+      "margin": 6,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowOpacity": 0,
+      "shadowRadius": 0,
+    }
+  }
+  testID="button-container-outer-layer"
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "backgroundColor": "#4169E1",
+        "borderColor": "transparent",
+        "borderRadius": 5,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flex": undefined,
+        "minWidth": 64,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shadowOpacity": 0,
+        "shadowRadius": 0,
+      }
+    }
+    testID="button-container"
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 5,
+          },
+        ]
+      }
+      testID="button"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "letterSpacing": 0.1,
+                "lineHeight": 20,
+              },
+              Object {
+                "textAlign": "left",
+              },
+              Object {
+                "color": "rgba(28, 27, 31, 1)",
+                "writingDirection": "ltr",
+              },
+              Array [
+                Object {
+                  "marginHorizontal": 16,
+                  "marginVertical": 9,
+                  "textAlign": "center",
+                },
+                false,
+                Object {
+                  "marginHorizontal": 12,
+                },
+                undefined,
+                false,
+                Object {
+                  "color": "rgba(103, 80, 164, 1)",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.1,
+                  "lineHeight": 20,
+                },
+                undefined,
+              ],
+            ]
+          }
+          testID="button-text"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "textAlign": "left",
+                },
+                Object {
+                  "color": "rgba(28, 27, 31, 1)",
+                  "fontFamily": "System",
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                Object {
+                  "writingDirection": "ltr",
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
+            }
+          />
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AddBookButton component renders the button correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "paddingBottom": 5,
+      },
+      Object {
+        "alignItems": "center",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(103, 80, 164, 1)",
+            "borderRadius": 22.5,
+            "height": 45,
+            "width": 45,
+          },
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Object {},
+        ]
+      }
+    >
+      <Text />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "justifyContent": "center",
+          },
+          Object {
+            "marginLeft": 10,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "letterSpacing": 0.15,
+              "lineHeight": 24,
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "color": "rgba(28, 27, 31, 1)",
+              "writingDirection": "ltr",
+            },
+            undefined,
+          ]
+        }
+      >
+        New Book
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`MyHeader component renders the component correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`MyHeader component renders the component correctly 2`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`MySearchBar component renders the component correctly 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "backgroundColor": "rgb(238, 232, 244)",
+      "borderRadius": 28,
+      "marginBottom": 15,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowOpacity": 0,
+      "shadowRadius": 0,
+    }
+  }
+  testID="search-bar-container-outer-layer"
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(238, 232, 244)",
+        "borderRadius": 28,
+        "flex": undefined,
+        "flexDirection": "row",
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shadowOpacity": 0,
+        "shadowRadius": 0,
+      }
+    }
+    testID="search-bar-container"
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "borderRadius": 20,
+          "height": 40,
+          "margin": 6,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+          "width": 40,
+        }
+      }
+      testID="icon-button-container-outer-layer"
+    >
+      <View
+        collapsable={false}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "rgba(121, 116, 126, 1)",
+            "borderRadius": 20,
+            "borderWidth": 0,
+            "elevation": 0,
+            "flex": 1,
+            "overflow": "hidden",
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0,
+            "shadowRadius": 0,
+          }
+        }
+        testID="icon-button-container"
+      >
+        <View
+          accessibilityComponentType="button"
+          accessibilityLabel="search"
+          accessibilityRole="button"
+          accessibilityState={
+            Object {
+              "disabled": true,
+            }
+          }
+          accessibilityTraits="button"
+          accessible={true}
+          centered={true}
+          collapsable={false}
+          focusable={true}
+          hitSlop={
+            Object {
+              "bottom": 6,
+              "left": 6,
+              "right": 6,
+              "top": 6,
+            }
+          }
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                },
+                Object {
+                  "borderRadius": 20,
+                },
+              ],
+            ]
+          }
+          testID="icon-button"
+        >
+          <Text />
+        </View>
+      </View>
+    </View>
+    <TextInput
+      accessibilityRole="search"
+      keyboardAppearance="light"
+      onChangeText={[Function]}
+      placeholder="Search"
+      placeholderTextColor="rgba(28, 27, 31, 1)"
+      returnKeyType="search"
+      selectionColor="rgba(103, 80, 164, 1)"
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "flex": 1,
+            "fontSize": 18,
+            "minWidth": 0,
+            "paddingLeft": 8,
+            "textAlign": "left",
+          },
+          Object {
+            "color": "rgba(73, 69, 79, 1)",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "letterSpacing": 0.15,
+            "lineHeight": 0,
+          },
+          Object {
+            "minHeight": 56,
+            "paddingLeft": 0,
+          },
+          undefined,
+        ]
+      }
+      testID="search-bar"
+      underlineColorAndroid="transparent"
+    />
+    <View
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "marginLeft": 16,
+            "position": "absolute",
+            "right": 0,
+          },
+          false,
+        ]
+      }
+      testID="search-bar-icon-wrapper"
+    >
+      <View
+        collapsable={false}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 20,
+            "height": 40,
+            "margin": 6,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0,
+            "shadowRadius": 0,
+            "width": 40,
+          }
+        }
+        testID="icon-button-container-outer-layer"
+      >
+        <View
+          collapsable={false}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "borderColor": "rgba(121, 116, 126, 1)",
+              "borderRadius": 20,
+              "borderWidth": 0,
+              "elevation": 0,
+              "flex": 1,
+              "overflow": "hidden",
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 0,
+                "width": 0,
+              },
+              "shadowOpacity": 0,
+              "shadowRadius": 0,
+            }
+          }
+          testID="icon-button-container"
+        >
+          <View
+            accessibilityComponentType="button"
+            accessibilityLabel="clear"
+            accessibilityRole="button"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
+            accessibilityTraits="button"
+            accessible={true}
+            centered={true}
+            collapsable={false}
+            focusable={true}
+            hitSlop={
+              Object {
+                "bottom": 6,
+                "left": 6,
+                "right": 6,
+                "top": 6,
+              }
+            }
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexGrow": 1,
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "borderRadius": 20,
+                  },
+                ],
+              ]
+            }
+            testID="icon-button"
+          >
+            <Text />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
