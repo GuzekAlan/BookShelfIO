@@ -29,6 +29,7 @@ const RentedBooks = () => {
               returnDate={item.returnDate}
               isExpire={item.isExpire}
               genre={item.genre}
+              buttonTitle="Return Book"
             />
           )}
         />
